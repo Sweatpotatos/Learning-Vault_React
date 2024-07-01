@@ -4,7 +4,7 @@ import './Header.css';
 function Header() {
   return (
     <header className="header">
-      <div className="header-logo">Yaolei Bian</div>
+      <div className="header-logo">Learning Vault</div>
       <nav className="header-menu">
         <div className="header-menu-item selected">
           Home
