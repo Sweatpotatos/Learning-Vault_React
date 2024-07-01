@@ -1,0 +1,9 @@
+.MainContent {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.MainContent h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
