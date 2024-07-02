@@ -1,11 +1,21 @@
 .MainContent {
   text-align: center;
   padding: 50px 20px;
+  background-image: url('\imggg.jpg'); /* Path to your image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center top 20%; /* Position the image lower */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  height: 100vh; /* Ensure it covers the full height of the viewport */
+  position: relative; /* Necessary for the overlay */
 }
 
 .MainContent h1 {
   font-size: 36px;
   margin-bottom: 170px;
+  cursor: pointer;
+  color: rgb(255, 255, 255); /* Optional: Add this line to make it look like a link */
+  position: relative; /* Ensure the content is above the overlay */
+  z-index: 2; /* Ensure the content is above the overlay */
 }
 
 .MainContent-image img {
@@ -13,4 +23,8 @@
   height: auto;
   display: block;
   margin: 0 auto;
+  position: relative; /* Ensure the content is above the overlay */
+  z-index: 2; /* Ensure the content is above the overlay */
 }
+
+
