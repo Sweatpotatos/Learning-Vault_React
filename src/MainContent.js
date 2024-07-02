@@ -5,7 +5,7 @@ import SearchBar from './SearchBar';
 function MainContent() {
   return (
     <div className="MainContent">
-      <h1>WELCOME TO THE LEARNING VAULT</h1>
+      <h1>WELCOME TO THE LEARNING VAULT yaolei Bian</h1>
       <SearchBar />
     </div>
   );
