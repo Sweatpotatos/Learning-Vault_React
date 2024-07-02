@@ -1,21 +1,36 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import './Header.css';
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate('/');
+  };
+
   return (
     <header className="header-container">
-      <div className="header-logo">
+      <div className="header-logo" onClick={handleLogoClick}>
         <span className="font-bold">Learning</span> Vault
       </div>
       <nav className="header-menu">
         <div className="header-menu-item selected">
-          <div className="menu-text">Home</div>
+          <Link to="/" className="menu-text">Home</Link>
           <div className="indicator" />
         </div>
-        <div className="header-menu-item">Activity List</div>
-        <div className="header-menu-item">New Arrivals</div>
-        <div className="header-menu-item">Gift Set</div>
-        <div className="header-menu-item">Visit Us</div>
+        <div className="header-menu-item">
+          <Link to="/activity-list" className="menu-text">Activity List</Link>
+        </div>
+        <div className="header-menu-item">
+          <Link to="/new-arrivals" className="menu-text">New Arrivals</Link>
+        </div>
+        <div className="header-menu-item">
+          <Link to="/gift-set" className="menu-text">Gift Set</Link>
+        </div>
+        <div className="header-menu-item">
+          <Link to="/visit-us" className="menu-text">Visit Us</Link>
+        </div>
       </nav>
     </header>
   );
